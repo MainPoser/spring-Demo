@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @ComponentScan(basePackages = {"com.lovejava"})//包扫描
-@PropertySource("jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
 public class SpringConfig {
     @Value("${driverClass}")
     private String driverClass;
